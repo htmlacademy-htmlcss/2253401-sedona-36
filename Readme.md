@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Макаров](https://up.htmlacademy.ru/htmlcss/36/user/2253401).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
