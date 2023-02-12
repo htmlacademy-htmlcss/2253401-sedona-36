@@ -9,38 +9,38 @@
 </head>
 
   <body>
-    <header class="page-header">
-      <a class="main-header-logo" href="index.html">
-        <img src="images/logo-header.svg" width="140" height="70" alt="Логотип сайта города Седона."></a>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">О Cедоне</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-current">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="nav-user">
-          <li class="nav-user-item">
-            <a class="nav-user-link" href="#"><span class="visually-hidden">Поиск</span></a>
-          </li>
-          <li class="nav-user-item">
-            <a class="nav-user-link" href="#"><span class="visually-hidden">Количество жилья добавленного в
-                избранное</span><span>12</span><span class="visually-hidden">штук</span></a>
-          </li>
-          <li class="nav-user-item">
-            <a class="button-header nav-user-link" href="#"><span class="visually-hidden">Хочу сюда!</span></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main-block main-inner">
-      <div class="page-container">
-        <section class="hotel-filter-block">
+    <div class="body-container">
+      <header class="page-header">
+        <a class="main-header-logo" href="index.html">
+          <img src="images/logo-header.svg" width="140" height="70" alt="Логотип сайта города Седона."></a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О Cедоне</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-current">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="nav-user">
+            <li class="nav-user-item">
+              <a class="nav-user-link" href="#"><span class="visually-hidden">Поиск</span></a>
+            </li>
+            <li class="nav-user-item">
+              <a class="nav-user-link" href="#"><span class="visually-hidden">Количество жилья добавленного в
+                  избранное</span><span>12</span><span class="visually-hidden">штук</span></a>
+            </li>
+            <li class="nav-user-item">
+              <a class="button-header nav-user-link" href="#"><span>Хочу сюда!</span></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-block main-inner">
+        <div class="page-container">
           <div class="hotels-sedona">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -107,28 +107,26 @@
               </div>
             </form>
           </div>
-        </section>
-        <section class="sorting">
-          <div class="sorting-hotel">
-            <h2 class="search-hotel">Найдено гостиниц:<span class="search-result-hotel">38</span></h2>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="favorite">Сначала избранные</option>
-              <option value="popular">Сначала популярные</option>
-            </select>
-            <a href="#" class="view view-icons">
-              <span class="visually-hidden">Вид значки</span>
-            </a>
-            <a class="view view-gallery" href="#">
-              <span class="visually-hidden">Вид галерея</span>
-            </a>
-            <a class="view view-list" href="#">
-              <span class="visually-hidden">Вид список</span>
-            </a>
-          </div>
+          <section class="sorting">
+            <div class="sorting-hotel">
+              <h2 class="search-hotel">Найдено гостиниц:<span class="search-result-hotel">38</span></h2>
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="favorite">Сначала избранные</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+              <a href="#" class="view view-icons">
+                <span class="visually-hidden">Вид значки</span>
+              </a>
+              <a class="view view-gallery" href="#">
+                <span class="visually-hidden">Вид галерея</span>
+              </a>
+              <a class="view view-list" href="#">
+                <span class="visually-hidden">Вид список</span>
+              </a>
+            </div>
 
-          <div class="results">
             <ul class="hotel-list">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#" tabindex="-1">
@@ -195,9 +193,7 @@
                 <p class="rating">Рейтинг: 5,0</p>
               </li>
             </ul>
-          </div>
 
-          <div class="pagination-block">
             <ul class="pagination">
               <li class="pagination-item">
                 <a class="pagination-link pagination-current" href="#" aria-current="page">1</a>
@@ -218,57 +214,57 @@
                 <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
-          </div>
-        </section>
+          </section>
 
-        <section class="appointment-catalog">
-          <h2 class="appointment-title">Подпишитесь на рассылку</h2>
-          <p class="appointment-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="appointment"></label>
-            <input type="email" name="newsletter-email" id="appointment" placeholder="Ваш e-mail">
-            <button class="button-subscribe" type="submit">Подписаться</button>
-          </form>
-        </section>
-      </div>
-    </main>
+          <section class="appointment-catalog">
+            <h2 class="appointment-title">Подпишитесь на рассылку</h2>
+            <p class="appointment-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="appointment"></label>
+              <input type="email" name="newsletter-email" id="appointment" placeholder="Ваш e-mail">
+              <button class="button-subscribe" type="submit">Подписаться</button>
+            </form>
+          </section>
+        </div>
+      </main>
 
-    <footer class="page-footer">
-      <div class="page-footer-container">
-        <section class="social-networks">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button-social-network" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button-social-network" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button-social-network" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+      <footer class="page-footer">
+        <div class="page-footer-container">
+          <section class="social-networks">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="button-social-network" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">ВКонтакте</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button-social-network" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Телеграм</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="button-social-network" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Ютуб</span>
+                </a>
+              </li>
+            </ul>
+          </section>
 
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
+          <section class="contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </section>
 
-        <section class="footer-logo">
-          <h2 class="visually-hidden">Сайт создан в HTML Academy</h2>
-          <a class="logo-developer" href="https://htmlacademy.ru/">
-            <img src="images/logo-html-academy.svg" width="115" height="32"
-              alt="Логотип разработчика HTML Academy."></a>
-        </section>
-      </div>
-    </footer>
+          <section class="footer-logo">
+            <h2 class="visually-hidden">Сайт создан в HTML Academy</h2>
+            <a class="logo-developer" href="https://htmlacademy.ru/">
+              <img src="images/logo-html-academy.svg" width="115" height="32"
+                alt="Логотип разработчика HTML Academy."></a>
+          </section>
+        </div>
+      </footer>
+    </div>
   </body>
 
 </html>
