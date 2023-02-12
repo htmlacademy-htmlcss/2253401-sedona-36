@@ -16,20 +16,17 @@
 
 html {
   height: 100%;
-  background-color: #f2f2f2;
 }
 
 body {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  height: 100%;
   min-height: 100%;
-  width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .button-booking {
@@ -74,6 +71,15 @@ body {
   text-transform: uppercase;
 }
 
+.body-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  min-height: 100%;
+}
+
 .main-block {
   flex-grow: 1;
 }
@@ -88,8 +94,8 @@ body {
 
 .nav {
   display: flex;
-  width: 962px;
   margin: 0 auto;
+  padding: 0 70px;
 }
 
 .nav-list {
@@ -97,12 +103,14 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  list-style: none;
 }
 
 .nav-user {
   max-width: 360px;
   margin-left: auto;
   display: flex;
+  list-style: none;
 }
 
 .nav-link {
@@ -128,11 +136,6 @@ body {
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .section-welcome {
@@ -175,13 +178,10 @@ body {
   margin: 0;
   padding: 0;
   width: 1200px;
+  list-style: none;
 }
 
 .advantages-column-description {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 400px;
 }
 
@@ -228,6 +228,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .services-head {
@@ -247,9 +248,6 @@ body {
 }
 
 .services-teaser {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 1200px;
 }
 
@@ -273,11 +271,8 @@ body {
 
 .booking {
   width: 1200px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+
 }
 
 .booking-title {
@@ -298,11 +293,7 @@ body {
 
 .subscription {
   width: 1200px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/subscribe.jpg");
@@ -328,8 +319,11 @@ body {
 
 .page-footer-container {
   display: flex;
-  margin: 0 auto;
-  width: 1060px;
+  padding: 40px 70px 30px;
+}
+
+.footer-social-list {
+  list-style: none;
 }
 
 .social-networks {
@@ -360,18 +354,14 @@ body {
   background-color: #ffffff;
 }
 
-.hotel-filter-block {
-  width: 1200px;
+.hotels-sedona {
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/filter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.hotels-sedona {
-  width: 1060px;
   margin: 0 auto;
+  padding: 35px 70px 70px;
 }
 
 .inner-header-title {
@@ -385,6 +375,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #ffffff;
+  list-style: none;
 }
 
 .breadcrumbs-link {
@@ -418,6 +409,10 @@ body {
   flex-direction: column;
 }
 
+.catalog-filter-list {
+  list-style: none;
+}
+
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
@@ -433,12 +428,15 @@ body {
   background-color: transparent;
 }
 
+.sorting {
+  padding: 50px 70px 60px;
+}
+
 .sorting-hotel {
-  width: 1060px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-
+  padding-bottom: 40px;
 }
 
 .search-hotel {
@@ -458,11 +456,6 @@ body {
   margin-left: auto;
 }
 
-.results {
-  width: 1060px;
-  margin: 0 auto;
-}
-
 .view {
   color: #000000;
   background-color: #ffffff;
@@ -471,9 +464,18 @@ body {
 
 .hotel-list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0 0 40px;
+  list-style: none;
+}
+
+.hotel-card {
+  width: 340px;
+}
+
+.hotel-card-image {
+  margin: 20px 20px 16px 20px;
 }
 
 .hotel-card-link {
@@ -481,6 +483,8 @@ body {
 }
 
 .hotel-card-title {
+  margin: 0 20px 16px 20px;
+  ;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -518,20 +522,14 @@ body {
   color: #333333;
 }
 
-.pagination-block {
-  width: 1060px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
 .pagination {
   display: flex;
   flex-wrap: wrap;
   min-width: 400px;
+  list-style: none;
+  margin: 0;
+  padding: 40px 70px 60px;
+
 }
 
 .pagination-link {
@@ -564,11 +562,7 @@ body {
 
 .appointment-catalog {
   width: 1200px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .appointment-title {
