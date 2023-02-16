@@ -51,7 +51,10 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
-  margin: 54px 413px 96px;
+  margin: 0 108px;
+  padding: 0;
+  min-width: 375px;
+  box-sizing: border-box;
 }
 
 .button-subscribe {
@@ -64,6 +67,13 @@ body {
   background-color: #82b3d3;
   text-decoration: none;
   text-transform: uppercase;
+  margin-right: auto;
+  padding: 0;
+  height: 52px;
+  min-width: 232px;
+  border: 0;
+
+
 }
 
 .button-social-network {
@@ -194,8 +204,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   max-width: 620px;
-  padding: 69px 290px 0;
-  margin-top: 0;
+  padding: 69px 0 0;
+  margin: 0 auto;
   margin-bottom: 25px;
 }
 
@@ -203,11 +213,12 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  text-align: center;
   color: #333333;
-  min-width: 651px;
-  padding: 0 274px 69px;
-  margin: 0;
+  max-width: 651px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 69px;
+  text-align: center;
 }
 
 .advantages-list {
@@ -225,15 +236,18 @@ body {
   width: 100%;
 }
 
-.advantages-column-description {
-  width: 400px;
-  min-height: 385px;
+.advantages-division-with-image {
+  padding: 102px 85px;
 }
 
 .advantages-without-image {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   min-height: 385px;
+}
+
+.advantages-division-without-image {
+  padding: 112px 85px;
 }
 
 .advantage-beautiful-road {
@@ -247,38 +261,31 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;
-}
-
-.advantages-title-with-image {
   margin: 0;
-  padding: 102px 113px 30px;
+  padding: 0 27px 30px;
 }
 
 .advantages-description {
   font-weight: 400;
   text-align: center;
   color: #333333;
-  max-width: 230px;
+  margin: 0 auto;
+  padding-top: 30px;
+  min-width: 230px;
 }
 
 .advantages-description-with-image {
   color: #ffffff;
-  padding: 30px 85px 102px;
-  margin: 0;
-}
-
-.advantages-title-without-image {
-  padding: 113px;
-  padding-bottom: 30px;
-}
-
-.advantages-description-without-image {
-  padding: 30px 85px 113px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .advantages-image {
   height: 100%;
+}
+
+.services-teaser {
+  padding: 64px 348px 0;
+  margin-bottom: 64px;
 }
 
 .services-list {
@@ -297,8 +304,9 @@ body {
   text-transform: uppercase;
   margin-top: 0;
   max-width: 700px;
-  padding: 64px 348px 0;
   margin-bottom: 20px;
+  padding: 0;
+
 }
 
 .other-description {
@@ -308,7 +316,7 @@ body {
   text-align: center;
   color: #333333;
   min-width: 490px;
-  padding: 0 355px 64px;
+  padding: 0;
   margin: 0;
 }
 
@@ -316,6 +324,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 400px;
+  justify-content: center;
 }
 
 .accommodation,
@@ -343,9 +352,9 @@ body {
 }
 
 .booking {
-  min-height: 406px;
   text-align: center;
-
+  padding: 96px 304px 0;
+  margin-bottom: 96px;
 }
 
 .booking-title {
@@ -355,7 +364,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;
-  padding: 96px 452px 0;
   margin-bottom: 20px;
 }
 
@@ -366,17 +374,18 @@ body {
   text-align: center;
   color: #333333;
   margin: 0;
-  padding: 0 304px 0;
+  padding: 0;
+  margin-bottom: 54px;
 }
 
 .subscription {
-  width: 1200px;
   text-align: center;
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 96px 258px 104px;
 
 }
 
@@ -387,10 +396,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;
-  padding: 96px 398px 0;
   margin-bottom: 20px;
-  max-width: 475px;
-
 }
 
 .subscription-description {
@@ -399,9 +405,21 @@ body {
   font-weight: 400;
   text-align: center;
   margin: 0;
-  padding: 0 363px 54px;
-  max-width: 475px;
+  padding: 0;
+  margin-bottom: 54px;
+}
 
+.subscription-form,
+.appointment-form {
+  display: flex;
+}
+
+.input-email {
+  margin: 0;
+  padding: 0;
+  min-width: 452px;
+  height: 52px;
+  border: 0;
 }
 
 .page-footer {
@@ -712,8 +730,9 @@ body {
 }
 
 .appointment-catalog {
-  width: 1200px;
   text-align: center;
+  padding: 96px 258px 0;
+  margin-bottom: 104px;
 }
 
 .appointment-title {
@@ -722,9 +741,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
-  padding: 96px 398px 0;
   margin-bottom: 20px;
-  max-width: 475px;
 }
 
 .appointment-description {
@@ -733,6 +750,10 @@ body {
   font-weight: 400;
   color: #333333;
   margin: 0;
-  padding: 0 363px 54px;
-  max-width: 475px;
+  padding: 0;
+  margin-bottom: 54px;
+}
+
+.appointment-email {
+  background-color: #f2f2f2;
 }
