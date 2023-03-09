@@ -800,10 +800,11 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
   display: flex;
 }
-
+/*
 .modal-container-close {
   display: none;
 }
+*/
 
 .modal {
   position: relative;
@@ -900,6 +901,13 @@ body {
   overflow: hidden;
 }
 
+.form-label-icon {
+  position: relative;
+  overflow: visible;
+  max-width: 95px;
+  padding-right: 16px;
+}
+
 .form-label-children {
   padding-left: 3px;
 }
@@ -967,7 +975,7 @@ body {
   color: #FF5757;
 }
 
-.modal-tourist {
+.search-characteristics {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -1002,6 +1010,12 @@ body {
   z-index: 1;
 }
 
+.group-tourist-field::-webkit-outer-spin-button,
+.group-tourist-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .count-button {
   display: flex;
   cursor: pointer;
@@ -1017,8 +1031,7 @@ body {
   margin-left: 10px;
 }
 
-.field-group-tourist:hover>.count-button,
-.field-group-tourist:hover>.modal-tourist {
+ .count-button:hover {
   background-color: #e6e6e6;
 }
 
@@ -1026,17 +1039,17 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-.count-button:hover .count-button-symbol {
+.count-button:hover .count-button-svg {
   fill: #000000;
 }
 
-.count-button:focus .count-button-symbol {
+.count-button:focus .count-button-svg {
   fill: #000000;
   outline: 3px solid #82b3d3;
   border-radius: 4px;
 }
 
-.count-button:active .count-button-symbol {
+.count-button:active .count-button-svg {
   fill: rgba(117, 97, 87, 0.3);
   outline: none;
 }
@@ -1049,16 +1062,10 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.group-tourist-field::-webkit-outer-spin-button,
-.group-tourist-field::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}
-
 .tooltip {
   position: absolute;
-  margin-top: -24px;
-  margin-left: 60px;
+  margin-top: 0;
+  margin-left: 10px;
   width: 26px;
   height: 26px;
 }
@@ -1110,11 +1117,10 @@ body {
   margin-right: auto;
 }
 
-.tooltip-toggle:hover+.tooltip-text,
-.tooltip-toggle:focus+.tooltip-text {
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
-
 
 .modal-button {
   display: block;
