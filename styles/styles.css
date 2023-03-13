@@ -1065,7 +1065,7 @@ body {
 .search-form-field {
   height: 21px;
   padding: 15px 20px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
@@ -1166,7 +1166,7 @@ body {
 
 .group-tourist-field {
   height: 48px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 20px;
