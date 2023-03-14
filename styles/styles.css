@@ -115,7 +115,7 @@ body {
 
 .button-subscribe:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: #82B3D3;
+  background-color: #68A2CA;
 }
 
 .button-subscribe:disabled {
@@ -406,22 +406,24 @@ body {
 }
 
 .section-welcome {
-  margin-bottom: 57px;
+  min-height: 485px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #3287d1;
   background-image: url("../images/steps-under-welcome.svg"), url("../images/index-background.jpg");
-  background-size: 100% auto, 100% auto;
+  background-size: 100% auto, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, top center;
 }
 
 .welcome {
-  padding: 51px 371px 25px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
 }
 
 .advantages {
   margin-bottom: 64px;
-  padding-top: 66px;
+  padding-top: 71px;
 }
 
 .advantages-head {
@@ -544,7 +546,7 @@ body {
 }
 
 .services-teaser {
-  margin-bottom: 63px;
+  margin-bottom: 62px;
   padding: 0 348px;
 }
 
@@ -995,6 +997,10 @@ body {
 
 .modal-close-button:active {
   background-color: #E6E6E6;
+}
+
+.modal-close-button:active::before,
+.modal-close-button:active::after {
   opacity: 0.3;
 }
 
@@ -1005,6 +1011,7 @@ body {
   padding: 0;
   font-size: 30px;
   line-height: 36px;
+  text-align: start;
   text-transform: uppercase;
 }
 
@@ -1334,6 +1341,24 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.modal-button:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.modal-button:focus-visible {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.modal-button:active {
+  background-color: rgba(104, 162, 202, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-button:disabled {
+  color: rgba(255, 255, 255, 1);
+  background-color: #E5E5E5;
 }
 
 .main-inner {
